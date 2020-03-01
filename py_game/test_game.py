@@ -7,7 +7,6 @@ import Game
 class TestGame(TestCase):
     test_game = Game.Game()
 
-    @patch('builtins.input', side_effect=['Josephine'])
     def test_greet_name(self, _):
         self.assertEqual(self.test_game.greet_name(), "Josephine")
 
