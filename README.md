@@ -6,6 +6,13 @@ This game is an extention of the simple guesisng game described [here](https://m
 To run the game and the unit tests:
 
 - Requires Python 3 environment
+- Coverage package installed
+
+To install Coverage:
+
+```python
+pip install coverage
+```
 
 Clone/download the repository. In command line:
 
