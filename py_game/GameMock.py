@@ -1,8 +1,9 @@
-import random
 
 
-class Game:
-
+# Copy of Game class without the random function
+# Correct guesses are hardcoded for testing purposes
+# Separates random.randint functionality from game logic
+class GameMock:
     player_name = None
     level = 1
 
@@ -39,15 +40,15 @@ class Game:
         while not game_over:
             tries = 1
             if self.level == 1:
-                correct = random.randint(1, 10)
+                correct = 4
                 for i in range(1, 11):
                     numbers_list.append(i)
             elif self.level == 2:
-                correct = random.randint(1, 20)
+                correct = 14
                 for i in range(1, 21):
                     numbers_list.append(i)
             elif self.level == 3:
-                correct = random.randint(1, 50)
+                correct = 44
                 for i in range(1, 51):
                     numbers_list.append(i)
             else:
@@ -98,13 +99,13 @@ class Game:
         while not game_over:
             tries = 1
             if self.level == 1:
-                correct = random.choice(colours_list.get(self.level))
+                correct = "red"
                 self.print_list(colours_list, self.level)
             elif self.level == 2:
-                correct = random.choice(colours_list.get(self.level))
+                correct = "pink"
                 self.print_list(colours_list, self.level)
             elif self.level == 3:
-                correct = random.choice(colours_list.get(self.level))
+                correct = "aquamarine"
                 self.print_list(colours_list, self.level)
             else:
                 print("You won the guessing game!")
@@ -147,13 +148,13 @@ class Game:
         while not game_over:
             tries = 1
             if self.level == 1:
-                correct = random.choice(animals_list.get(self.level))
+                correct = "cat"
                 self.print_list(animals_list, self.level)
             elif self.level == 2:
-                correct = random.choice(animals_list.get(self.level))
+                correct = "chicken"
                 self.print_list(animals_list, self.level)
             elif self.level == 3:
-                correct = random.choice(animals_list.get(self.level))
+                correct = "hippo"
                 self.print_list(animals_list, self.level)
             else:
                 print("You won the guessing game!")

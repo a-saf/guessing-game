@@ -2,11 +2,11 @@ import io
 import unittest
 from unittest import TestCase
 from mock import patch
-import Game
+import GameMock
 
 
 class TestGame(TestCase):
-    test_game = Game.GameMock()
+    test_game = GameMock.GameMock()
 
     @patch('builtins.input', side_effect=["Josephine"])
     def test_greet_name(self, _):
