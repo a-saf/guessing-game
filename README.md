@@ -1,7 +1,7 @@
 # Guessing-game
 A simple guessing game implementation with a test suite
 
-This game is an extention of the simple guesisng game described [here](https://medium.com/better-programming/building-a-simple-guessing-game-in-python-e39058a8cbcf) with added modules for numbers, colours and animals. The game has three levels and tries per level are limited to three.
+This game is an extention of the simple guesisng game described [here](https://medium.com/better-programming/building-a-simple-guessing-game-in-python-e39058a8cbcf) with added modules for numbers, colours and animals. Each game module has three levels of difficulty and is limited by three tries.
 
 To run the game and the unit tests:
 
